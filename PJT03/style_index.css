@@ -1,0 +1,137 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* w300 -> width: 300px; h300 -> height: 300px; */
+/* bgc-> background: */
+.frontpage {
+    /* width: 300px;; */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    height: 450px;
+    background: linear-gradient(180deg,rgba(202, 190, 181, 0.8) 0,rgba(112,93,80,.8) 90%),url(../이미지/front.jpg) 50% no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    text-align: center;
+    color: black;
+    z-index: -2;
+
+}
+
+.intro {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    text-align: center;
+    color: black;
+}
+
+
+.text_big {
+    font-size: 40px;
+}
+
+.text_container {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 40px;
+    width: 300px;
+    height: 200px   
+}
+
+.space {
+    margin: 10px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.project {
+    background-color: blue;
+    width: auto;
+    height: 800px;   
+}
+
+.box_big {
+    background-color: white;
+    margin: auto auto;
+    width: 50%;
+    height: 500px;
+}
+
+.box {
+
+}
+
+
+.skills {
+    background-color: greenyellow;
+}
+
+.skill_Main {
+    font-size: 10vw;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+}
+
+.card {
+    align-items: center;
+}
+
+
+.career {
+    height: 300px;
+}
+
+.footer {
+    height: 50px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* 1. not-provided 클래스를 기본적으로 보이지 않도록 설정 */
+.not-provided {
+    display: none;
+}
+
+
+/* 2. 470px 밑으로 가면, not-provided 예만 보이도록 설정 */
+@media(max-width:470px) {
+
+    main,
+    section,
+    nav,
+    /* 우선순위 */
+    footer {
+        display: none;
+    }
+
+    .not-provided {
+        display: block;
+    }
+}
